@@ -15,6 +15,17 @@
         }
         console.log(tax);
     </script>
+    <script>
+        var spendings=[150000, 185000, 230000], taxRates, tax=[];
+        for(let i=0; i<spendings.length; i++){
+            if(spendings[i] <= 50000){taxRates = 0.1}
+            else if(spendings[i] <= 150000){ taxRates = 0.15}
+            else{ taxRates = 0.2}
+
+            tax[i]= spendings[i] * taxRates;
+        }
+        console.log(tax);
+    </script>
 
 </body>
 </html>
